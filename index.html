@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Couger | Fashion Redefined</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Custom gradient animation */
+    .gradient-bg {
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #2b2b2b, #f8b400);
+      background-size: 300% 300%;
+      animation: gradientMove 10s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="gradient-bg text-white overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-8 py-4 bg-black/60 backdrop-blur-md fixed w-full z-10">
+    <h1 class="text-2xl font-bold text-yellow-400 tracking-widest uppercase">Couger</h1>
+    <ul class="hidden md:flex space-x-8 text-gray-200 font-medium">
+      <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+      <li><a href="#categories" class="hover:text-yellow-400 transition">Categories</a></li>
+      <li><a href="#" class="hover:text-yellow-400 transition">Shop</a></li>
+      <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
+    </ul>
+    <button class="md:hidden text-yellow-400 text-2xl"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <!-- Hero / Carousel Section -->
+  <section class="relative w-full h-screen flex items-center justify-center">
+    <div class="absolute inset-0">
+      <img src="banner.jpg" class="w-full h-full object-cover opacity-70" alt="Banner">
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    <div class="relative text-center z-10">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-yellow-400 uppercase mb-4 animate-fadeInDown">
+        Welcome to Couger
+      </h1>
+      <p class="text-gray-200 text-lg md:text-xl mb-6 animate-fadeInUp">
+        Discover the latest fashion trends for men and women
+      </p>
+      <a href="#categories" class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-full hover:bg-white transition">
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="py-20 px-6 md:px-20 bg-black/50 backdrop-blur-md">
+    <h2 class="text-center text-3xl font-semibold text-yellow-400 mb-12 uppercase">
+      Shop by Category
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- T-Shirts -->
+      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-yellow-500/20 transition transform hover:-translate-y-2">
+        <img src="images (10).jpeg" alt="T-shirt" class="w-full h-64 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-yellow-400 text-xl font-semibold mb-2">T-shirts</h3>
+          <p class="text-gray-300 mb-4">Explore our stylish collection of premium T-shirts.</p>
+          <a href="t-shirt.html" class="bg-yellow-400 text-black font-semibold py-2 px-5 rounded-full hover:bg-white transition">
+            See Our T-shirts
+          </a>
+        </div>
+      </div>
+
+      <!-- Hoodies -->
+      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-yellow-500/20 transition transform hover:-translate-y-2">
+        <img src="images (2).jpeg" alt="Hoodies" class="w-full h-64 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-yellow-400 text-xl font-semibold mb-2">Hoodies</h3>
+          <p class="text-gray-300 mb-4">Warm, stylish, and made for comfort — check our hoodies.</p>
+          <a href="hoodies.html" class="bg-yellow-400 text-black font-semibold py-2 px-5 rounded-full hover:bg-white transition">
+            See Our Hoodies
+          </a>
+        </div>
+      </div>
+
+      <!-- Shoes -->
+      <div class="bg-gray-900/70 border border-gray-700 rounded-2xl overflow-hidden shadow-lg hover:shadow-yellow-500/20 transition transform hover:-translate-y-2">
+        <img src="download (7).jpeg" alt="Shoes" class="w-full h-64 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-yellow-400 text-xl font-semibold mb-2">Shoes</h3>
+          <p class="text-gray-300 mb-4">Walk with style — browse our collection of shoes.</p>
+          <a href="shoes.html" class="bg-yellow-400 text-black font-semibold py-2 px-5 rounded-full hover:bg-white transition">
+            See Our Shoes
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-black/80 border-t border-gray-700 text-gray-400">
+    © 2025 Couger Fashion. All Rights Reserved.
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a2e8d6aa1b.js" crossorigin="anonymous"></script>
+</body>
+</html>
